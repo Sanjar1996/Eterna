@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'pages:home' %}">{% trans "Asosiy" %}</a></li>
+          <li>{% trans "Pricing" %}</li>
+        </ol>
+        <h2>{% trans "Pricing" %}</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 box">
+            <h3>{% trans "Free" %}</h3>
+            <h4>$0<span>{% trans "per month" %}</span></h4>
+            <ul>
+              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
+              <li><i class="bx bx-check"></i> {% trans "Nec feugiat nisl pretium" %}</li>
+              <li><i class="bx bx-check"></i> {% trans "Nulla at volutpat diam uteera" %}</li>
+              <li class="na"><i class="bx bx-x"></i> <span>{% trans "Nulla at volutpat diam uteera" %}</span></li>
+              <li class="na"><i class="bx bx-x"></i> <span>{% trans "Nulla at volutpat diam uteera" %}</span></li>
+            </ul>
+            <a href="#" class="buy-btn">{% trans "Sotib olish" %}</a>
+          </div>
+
+          <div class="col-lg-4 box featured">
+            <h3>{% trans "Biznes" %}</h3>
+            <h4>$29<span>{% trans "har oy" %}</span></h4>
+            <ul>
+              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
+              <li><i class="bx bx-check"></i> {% trans "Nec feugiat nisl pretium" %}</li>
+              <li><i class="bx bx-check"></i> {% trans "Nulla at volutpat diam uteera" %}</li>
+              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
+            </ul>
+            <a href="#" class="buy-btn">{% trans "Har oy" %}</a>
+          </div>
+
+          <div class="col-lg-4 box">
+            <h3>{% trans "Developer" %}</h3>
+            <h4>$49<span>{% trans "har oy" %}</span></h4>
+            <ul>
+              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
+              <li><i class="bx bx-check"></i> {% trans "Nec feugiat nisl pretium" %}</li>
+              <li><i class="bx bx-check"></i> {% trans "Nulla at volutpat diam uteera" %}</li>
+              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
+            </ul>
+            <a href="#" class="buy-btn">{% trans "Sotib olish" %}</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+  </main><!-- End #main -->
+{% endblock content %}
