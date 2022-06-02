@@ -85,44 +85,23 @@
 
                         <div class="sidebar">
 
-                            <h3 class="sidebar-title">{% trans "Qidirish" %}</h3>
-                            <div class="sidebar-item search-form">
-                                <form action="">
-                                    <input type="text">
-                                    <button type="submit"><i class="bi bi-search"></i></button>
-                                </form>
-                            </div><!-- End sidebar search formn-->
+{#                            <h3 class="sidebar-title">{% trans "Qidirish" %}</h3>#}
+{#                            <div class="sidebar-item search-form">#}
+{#                                <form action="">#}
+{#                                    <input type="text">#}
+{#                                    <button type="submit"><i class="bi bi-search"></i></button>#}
+{#                                </form>#}
+{#                            </div><!-- End sidebar search formn-->#}
 
                             <h3 class="sidebar-title">{% trans "Kategoriyalar" %}</h3>
                             <div class="sidebar-item categories">
                                 <ul>
                                     {% for count in type %}
-                                        <li><a href="#">{{ count.type }} <span>(25)</span></a></li>
+                                        <li><a href="#">{{ count.type }} </a></li>
                                     {% endfor %}
                                 </ul>
                             </div><!-- End sidebar categories-->
 
-                            <h3 class="sidebar-title">{% trans "So'ngi postlar" %}</h3>
-                            <div class="sidebar-item recent-posts">
-                                <div class="post-item clearfix">
-                                    <img src="{% static 'assets/img/blog/blog-recent-1.jpg' %}" alt="">
-                                    <h4>
-                                        <a href="{% url 'pages:blog-single' %}">{% trans "Nihil blanditiis at in nihil autem" %}</a>
-                                    </h4>
-                                    <time datetime="2020-05-05">Jan 1, 2020</time>
-                                </div>
-
-                                <h3 class="sidebar-title">{% trans "So'ngi postlar" %}</h3>
-                                <div class="sidebar-item recent-posts">
-                                    <div class="post-item clearfix">
-                                        <img src="{% static 'assets/img/blog/blog-recent-1.jpg' %}" alt="">
-                                        <h4>
-                                            <a href="{% url 'pages:blog-single' %}">{% trans "Nihil blanditiis at in nihil autem" %}</a>
-                                        </h4>
-                                        <time datetime="2020-05-05">Jan 1, 2020</time>
-                                    </div>
-                                </div>
-                            </div><!-- End sidebar recent posts-->
 
                             <h3 class="sidebar-title">Teglar</h3>
                             <div class="sidebar-item tags">

@@ -16,7 +16,7 @@
                          style="background-image: url({% static 'assets/img/slide/1.jpg' %})">
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h3 class="animate__animated animate__fadeInDown">{% trans "Dorivor" %}<span>{% trans "o'simliklarni yetishtirish va qayta ishlash" %}</span>
+                                <h3 class="animate__animated animate__fadeInDown">{% trans "Dorivor " %}<span>{% trans "o'simliklarni yetishtirish va qayta ishlash" %}</span>
                                 </h3>
                                 <p class="animate__animated animate__fadeInUp">{% trans "O'zbekiston Respublikasi Prezidentining 2020 yil 26-noyabrdagi 'Dorivor o'simliklarni yetishtirish va qayta ishlash, ularning urug'chiligini yo'lga qo'yishni rivojlantirish bo'yicha ilmiy tadqiqotlar ko'lamini kengaytirishga oid chora-tadbirlari' to'g'risidagi Qaroriga muvofiq tashkil etilgan." %}</p>
                                 <a href="https://lex.uz/uz/docs/-5125714"
@@ -66,8 +66,8 @@
                             <p>
                                 &nbsp&nbsp&nbsp {% trans "Markazga Qo'mita raisi tomonidan lavozimga tayinlanadigan va lavozmdan ozod etiladigan bosh direktor rahbarlik qiladi" %};
                                 <br>&nbsp&nbsp&nbsp {% trans "Bosh direktorning ikki nafar o'rinbosari bo'ladi, ular bosh direktorning taqdimnomasiga asosan Qo'mita raisi tomonidan lavozimga tayinlanadi va lavozimdan ozod etiladi" %}
-                                ; <br> &nbsp&nbsp&nbsp Markaz bosh bugalteri Qo'mita bilan kelishgan xolda bosh direktor
-                                tomonidan lavozimga tayinlanadi va lavozmdan ozod etiladi.</p>
+                                ; <br> &nbsp&nbsp&nbsp {% trans "Markaz bosh bugalteri Qo'mita bilan kelishgan xolda bosh direktor tomonidan lavozimga tayinlanadi va lavozmdan ozod etiladi." %}
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -117,29 +117,19 @@
                         <img src="{% static 'assets/img/dorivor.jpeg' %}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 content">
-                        <h3>{% trans "Hududlar dorivor o'simliklar yetishtirish bo'yicha ixtisoslashtiriladi " %}.</h3>
+                        <h3>{% trans "Hududlar dorivor o'simliklar yetishtirish bo'yicha ixtisoslashtiriladi." %}</h3>
                         <p class="fst-italic">{% trans "Hududlar dorivor o'simliklar yetishtirish bo'yicha ixtisoslashtiriladi." %}
                         </p>
 
                         <p>
-                            “Yovvoyi holda o'suvchi dorivor o'simliklarni muhofaza qilish, madaniy holda yetishtirish,
-                            qayta ishlash va mavjud resurslardan oqilona foydalanish chora-tadbirlari to'g'risida”
-                            Prezident qarori qabul qilindi.<br>
-                            Qarorga muvofiq, 2020 yil 1 maydan boshlab dorivor o'simliklarni yetishtirish, saqlash,
-                            birlamchi yoki chuqur qayta ishlash klasterlari tashkil etiladi, shuningdek, hududlar
-                            dorivor o'simliklar yetishtirish bo'yicha ixtisoslashtiriladi.<br>
-                            Dorivor o'simliklar klasteri uchun yer maydoni Qoraqalpog'iston Respublikasi Vazirlar
-                            Kengashi, viloyatlar hokimliklari va tashabbuskorlar o'rtasida tuziladigan bitim asosida
-                            ajratiladi.<br>
-                            Xorijiy investorlar ishtirokidagi dorivor o'simliklar klasteriga yer maydoni investitsiya
-                            kiritish to'g'risidagi shartnoma imzolangandan so'ng Vazirlar Mahkamasi tomonidan
-                            ajratiladi.
-                            <br>
-                            - Klasterni tashkil etadigan tashabbuskor tomonidan quyidagi hujjatlar taqdim etiladi:<br>
-                            - ariza;<br>
-                            - biznes-reja yoki texnik-iqtisodiy asosnoma;<br>
-                            - zarur infratuzilma ob'ektlari, mol-mulk va boshqa vositalarning mavjudligi haqida
-                            ma'lumotnoma.
+                            {% trans " 'Yovvoyi holda o'suvchi dorivor o'simliklarni muhofaza qilish, madaniy holda yetishtirish, qayta ishlash va mavjud resurslardan oqilona foydalanish chora-tadbirlari to'g'risida' Prezident qarori qabul qilindi" %}.<br>
+                            {% trans "Qarorga muvofiq, 2020 yil 1 maydan boshlab dorivor o'simliklarni yetishtirish, saqlash, birlamchi yoki chuqur qayta ishlash klasterlari tashkil etiladi, shuningdek, hududlar dorivor o'simliklar yetishtirish bo'yicha ixtisoslashtiriladi." %}<br>
+                            {% trans "Dorivor o'simliklar klasteri uchun yer maydoni Qoraqalpog'iston Respublikasi Vazirlar Kengashi, viloyatlar hokimliklari va tashabbuskorlar o'rtasida tuziladigan bitim asosida ajratiladi." %}<br>
+                            {% trans "Xorijiy investorlar ishtirokidagi dorivor o'simliklar klasteriga yer maydoni investitsiya kiritish to'g'risidagi shartnoma imzolangandan so'ng Vazirlar Mahkamasi tomonidan ajratiladi." %}<br>
+                            - {% trans "Klasterni tashkil etadigan tashabbuskor tomonidan quyidagi hujjatlar taqdim etiladi:" %}<br>
+                            - {% trans "ariza;" %}<br>
+                            - {% trans "biznes-reja yoki texnik-iqtisodiy asosnoma;" %}<br>
+                            - {% trans "zarur infratuzilma ob'ektlari, mol-mulk va boshqa vositalarning mavjudligi haqida ma'lumotnoma." %}
                         </p>
                     </div>
                 </div>
@@ -152,7 +142,9 @@
             <div class="container">
 
                 <div class="row">
-                    <center class="fst-normal mb-4 animate__animated animate__fadeInDown" style="font-size: 25px;"><b>Markaz o'ziga yukatilgan asosiy vazifalarga muvofiq quydagi funksiyalarni amalga oshiradi.</b></center>
+                    <center class="fst-normal mb-4 animate__animated animate__fadeInDown" style="font-size: 25px;"><b>
+                        {% trans "Markaz o'ziga yukatilgan asosiy vazifalarga muvofiq quydagi funksiyalarni amalga oshiradi." %}
+                    </b></center>
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bxl-dribbble"></i></div>
@@ -173,7 +165,9 @@
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-tachometer"></i></div>
 {#                            <h4><a href="">Magni Dolores</a></h4>#}
-                            <p>urug‘lik materiallarni yetishtirish va tayyorlash, ko‘paytirish, kolleksion ko‘chatxonalar tashkil etish hamda ularning xomashyolarini qayta ishlash bilan bog‘liq ilmiy va amaliy tadqiqotlarni olib borish sohasida</p>
+                            <p>
+                                {% trans "urug‘lik materiallarni yetishtirish va tayyorlash, ko‘paytirish, kolleksion ko‘chatxonalar tashkil etish hamda ularning xomashyolarini qayta ishlash bilan bog‘liq ilmiy va amaliy tadqiqotlarni olib borish sohasida" %}
+                            </p>
                         </div>
                     </div>
 

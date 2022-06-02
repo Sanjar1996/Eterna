@@ -1,21 +1,16 @@
 from django.db import models
 from django.utils.translation import get_language
-from PIL import Image as pilim
 
-from config import settings
 
 class YangiliklarModel(models.Model):
     sub_title_uz = models.CharField(max_length=255)
     sub_title_ru = models.CharField(max_length=255)
-    sub_title_en = models.CharField(max_length=255)
 
-    title_uz = models.CharField(max_length=255) 
+    title_uz = models.CharField(max_length=255)
     title_ru = models.CharField(max_length=255)
-    title_en = models.CharField(max_length=255)
 
     text_uz = models.TextField()
     text_ru = models.TextField()
-    text_en = models.TextField()
 
     data = models.DateTimeField(auto_now=False)
     image = models.ImageField()
@@ -36,19 +31,15 @@ class YangiliklarModel(models.Model):
         return getattr(self, 'text_{}'.format(get_language()))
 
 
-
 class XodimModels(models.Model):
     fullname_uz = models.CharField(max_length=255)
     fullname_ru = models.CharField(max_length=255)
-    fullname_en = models.CharField(max_length=255)
 
     lavozim_uz = models.CharField(max_length=255)
     lavozim_ru = models.CharField(max_length=255)
-    lavozim_en = models.CharField(max_length=255)
 
     qabul_uz = models.CharField(max_length=255)
     qabul_ru = models.CharField(max_length=255)
-    qabul_en = models.CharField(max_length=255)
 
     brith_day = models.DateField(blank=True)
     image = models.ImageField()
@@ -72,6 +63,7 @@ class XodimModels(models.Model):
     def fullname(self):
         return getattr(self, 'fullname_{}'.format(get_language()))
 
+
 class FloraTypeModel(models.Model):
     type_uz = models.CharField(max_length=45)
     type_ru = models.CharField(max_length=45)
@@ -84,23 +76,20 @@ class FloraTypeModel(models.Model):
     def type(self):
         return getattr(self, 'type_{}'.format(get_language()))
 
+
 class FloraModel(models.Model):
     flora_types = models.ForeignKey(FloraTypeModel, on_delete=models.CASCADE)
     name_uz = models.CharField(max_length=45)
     name_ru = models.CharField(max_length=45)
-    name_en = models.CharField(max_length=45)
 
     title_uz = models.CharField(max_length=100)
     title_ru = models.CharField(max_length=100)
-    title_en = models.CharField(max_length=100)
 
     subtitle_uz = models.CharField(max_length=255)
     subtitle_ru = models.CharField(max_length=255)
-    subtitle_en = models.CharField(max_length=255)
 
     info_uz = models.TextField()
     info_ru = models.TextField()
-    info_en = models.TextField()
     image = models.ImageField()
     data = models.DateTimeField(blank=True)
 
@@ -114,3 +103,23 @@ class FloraModel(models.Model):
     @property
     def subtitle(self):
         return getattr(self, 'subtitle_{}'.format(get_language()))
+
+
+class DockModel(models.Model):
+    title_uz = models.CharField(max_length=255)
+    title_ru = models.CharField(max_length=255)
+    sub_title_uz = models.CharField(max_length=255)
+    sub_title_ru = models.CharField(max_length=255)
+    link = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.title_uz
+
+
+    @property
+    def title(self):
+        return getattr(self, 'title_{}'.format(get_language()))
+
+    @property
+    def sub_title(self):
+        return getattr(self, 'sub_title_{}'.format(get_language()))

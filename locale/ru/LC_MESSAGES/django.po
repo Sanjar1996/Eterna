@@ -3,25 +3,39 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-30 16:43+0500\n"
-"PO-Revision-Date: 2022-05-30 20:57+0500\n"
-"Language: ru\n"
+"POT-Creation-Date: 2022-05-31 11:22+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"X-Generator: Poedit 2.3\n"
+
+#: template/about.html:13 template/base.html:70 template/base.html:98
+#: template/blog.html:12 template/contact.html:12 template/portfolio.html:12
+#: template/pricing.html:12 template/services.html:11 template/team.html:12
+msgid "Asosiy"
+msgstr "Основные"
+
+#: template/about.html:14 template/about.html:16 template/base.html:71
+#: template/base.html:99 template/index.html:86
+msgid "Yangiliklar"
+msgstr "Новости"
+
+#: template/about.html:38 template/news.html:26
+msgid "Vaqt"
+msgstr "Время"
 
 #: template/base.html:10 template/base.html:63
-#, fuzzy
 msgid ""
 "O'rmon xo'jaligi davlat qo'mitasi negizidagi shifobax dorivor o'simiklarni "
 "yetishtirish markazi"
@@ -29,119 +43,131 @@ msgstr ""
 "Центр по выращиванию лекарственных растений при Государственном комитете "
 "лесного хозяйства"
 
-#: template/base.html:70 template/base.html:98
-#, fuzzy
-msgid "Asosiy"
-msgstr "Основные"
-
-#: template/base.html:71 template/base.html:99 template/index.html:70
-#, fuzzy
-msgid "Yangiliklar"
-msgstr "Новости"
-
-#: template/base.html:72 template/base.html:100
-#, fuzzy
+#: template/base.html:72 template/base.html:100 template/services.html:14
 msgid "Markaz faoliyati"
 msgstr "Деятельность центра"
 
-#: template/base.html:73 template/base.html:101
-#, fuzzy
+#: template/base.html:73 template/base.html:101 template/team.html:13
+#: template/team.html:15
 msgid "Rahbarlar"
 msgstr "Руководство"
 
-#: template/base.html:74
-#, fuzzy
+#: template/base.html:74 template/portfolio.html:13 template/portfolio.html:15
 msgid "O'simliklar"
 msgstr "Растения"
 
 #: template/base.html:75
-#, fuzzy
 msgid "Dorivor o'simliklar"
 msgstr "Лекарственные растения"
 
 #: template/base.html:76
-#, fuzzy
 msgid "Me'yoriy xujjatlar"
 msgstr "Нормативные документы"
 
 #: template/base.html:77
-#, fuzzy
 msgid "Biz bilan bog'lanish"
 msgstr "Связаться с нами"
 
 #: template/base.html:96
-#, fuzzy
 msgid "Foydali linklar"
 msgstr "Полезные ссылки"
 
 #: template/base.html:102
-#, fuzzy
 msgid "Privacy policy"
 msgstr "Политика конфиденциальности"
 
 #: template/base.html:107
-#, fuzzy
 msgid "Bizning xizmatlar"
 msgstr "Наши услуги"
 
 #: template/base.html:109
-#, fuzzy
 msgid "Web Design"
 msgstr "Веб-дизайн"
 
 #: template/base.html:110
-#, fuzzy
 msgid "Web Development"
 msgstr "Веб-разработка"
 
 #: template/base.html:111
-#, fuzzy
 msgid "Product Management"
 msgstr "Управление продуктами"
 
 #: template/base.html:112
-#, fuzzy
 msgid "Marketing"
 msgstr "Маркетинг"
 
 #: template/base.html:113
-#, fuzzy
 msgid "Graphic Design"
-msgstr "Графический дизайн"
+msgstr "График дизайнер"
 
-#: template/base.html:118
-#, fuzzy
+#: template/base.html:118 template/contact.html:15
 msgid "Biz bilan aloqa"
 msgstr "Связаться с нами"
 
 #: template/base.html:130
-#, fuzzy
 msgid "About Eterna"
-msgstr "О Вечном"
+msgstr "Эбоут Этерна"
 
 #: template/base.html:131
-#, fuzzy
 msgid ""
 "Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra "
 "videa magna derita valies darta donna mare fermentum iaculis eu non diam "
 "phasellus"
-msgstr ""
-"Завтра бронируем билеты на \"одио ес фейджиат лиде парнасо тьерра\". Justo "
-"eget nada terra видео великие истинные ценности, данные донне морем "
-"ферментированного сахара eu non diam phasellus"
+msgstr "фыв ыфвфвывйк сыв а уц ацаваы ыа ывацуа вы ва авыа ыва"
 
-#: template/index.html:18
-#, fuzzy
-msgid "Dorivor"
+#: template/blog.html:13
+msgid "Blog"
+msgstr "Блог"
+
+#: template/blog.html:15
+msgid "BLog"
+msgstr "Блог"
+
+#: template/blog.html:55
+msgid "Ko'proq"
+msgstr "Больше"
+
+#: template/blog.html:66
+msgid "oldingi"
+msgstr "предыдущий"
+
+#: template/blog.html:71
+msgid "saxifa"
+msgstr "страницы"
+
+#: template/blog.html:71
+msgid "dan"
+msgstr "от"
+
+#: template/blog.html:74
+msgid "keyingi"
+msgstr "далее"
+
+#: template/blog.html:88
+msgid "Qidirish"
+msgstr "Поиск"
+
+#: template/blog.html:96
+msgid "Kategoriyalar"
+msgstr "Категории"
+
+#: template/blog.html:105 template/blog.html:115
+msgid "So'ngi postlar"
+msgstr "Последние посты"
+
+#: template/blog.html:110 template/blog.html:120
+msgid "Nihil blanditiis at in nihil autem"
+msgstr "Последние посты Последние посты"
+
+#: template/index.html:19
+msgid "Dorivor "
 msgstr "Лекарственный"
 
-#: template/index.html:18
-#, fuzzy
+#: template/index.html:19
 msgid "o'simliklarni yetishtirish va qayta ishlash"
 msgstr "выращивание и обработка растений"
 
-#: template/index.html:19
-#, fuzzy
+#: template/index.html:21
 msgid ""
 "O'zbekiston Respublikasi Prezidentining 2020 yil 26-noyabrdagi 'Dorivor "
 "o'simliklarni yetishtirish va qayta ishlash, ularning urug'chiligini yo'lga "
@@ -149,32 +175,27 @@ msgid ""
 "oid chora-tadbirlari' to'g'risidagi Qaroriga muvofiq tashkil etilgan."
 msgstr ""
 "Организован в соответствии с Постановлением Президента Республики Узбекистан "
-"от 26 ноября 2020 года \"О мерах по расширению масштабов научных "
-"исследований по выращиванию и переработке лекарственных растений, развитию "
-"семеноводства\"."
+"от 26 ноября 2020 года 'О мерах по расширению масштабов научных исследований "
+"по выращиванию и переработке лекарственных растений, развитию семеноводства'."
 
-#: template/index.html:20 template/index.html:82
-#, fuzzy
+#: template/index.html:23 template/index.html:99
 msgid "Batafsil"
 msgstr "Подробнее"
 
-#: template/index.html:39
-#, fuzzy
+#: template/index.html:42
 msgid "Asosiy vazifa va funksiyalari haqida qisqacha:"
 msgstr "Кратко об основных задачах и функциях:"
 
-#: template/index.html:40
-#, fuzzy
+#: template/index.html:44
 msgid ""
 "Dorivor o'simliklarni ilmiy asosda yetishtirish va qayta sihlash, ulardan "
 "oqilona foydalanishning yagona strategiyasini shakllantirish va amalga "
 "oshirish;"
 msgstr ""
-"Формирование и реализация единой стратегии научно обоснованного выращивания "
+"формирование и реализация единой стратегии научно обоснованного выращивания "
 "и переработки лекарственных растений, их рационального использования;"
 
-#: template/index.html:40
-#, fuzzy
+#: template/index.html:46
 msgid ""
 "Respublika hududidagi yovvoyi holda o'suvchi dorivor o'simliklar areallarini "
 "o'rganish va zaxiralarini aniqlash, mavjud bioresurslar genofondini saqlash, "
@@ -184,13 +205,11 @@ msgstr ""
 "на территории республики, сохранение генофонда существующих биоресурсов, "
 "организация материнских плантаций;"
 
-#: template/index.html:46
-#, fuzzy
+#: template/index.html:53
 msgid "Markazning huquqlari va javobgarliklari haqida qisqacha:"
 msgstr "Кратко о правах и обязанностях центра:"
 
-#: template/index.html:47
-#, fuzzy
+#: template/index.html:56
 msgid ""
 "Dorivor o'simliklarni to'plash (g'amlash), ularni olib kirish va tashqariga "
 "olib chiqishga ruxsatnomalar berish;"
@@ -198,134 +217,279 @@ msgstr ""
 "Сбор (заготовка) лекарственных растений, выдача разрешений на их ввоз и "
 "вывоз;"
 
-#: template/index.html:47
-#, fuzzy
+#: template/index.html:58
 msgid ""
 "Ilmiy-tadqiqot ishlarining re'jalarini, ish dasturlari va bajarish "
 "usullarini  hamda ilmiy hisobotlarini  muhokama qilish maqsadida ilmiy "
 "kengahs tashkil etish;"
 msgstr ""
-"Создание научного совета для обсуждения проектов научно-исследовательских "
-"работ, программ и методов выполнения работ, а также научных отчетов;"
+"создание ученого совета для обсуждения планов научно-исследовательских "
+"работ, рабочих программ и методов выполнения, а также научных отчетов;"
 
-#: template/index.html:53
-#, fuzzy
+#: template/index.html:65
 msgid "Markaz faoliyatini tashkil etish haqida qisqacha:"
 msgstr "Кратко об организации деятельности центра:"
 
-#: template/index.html:54
-#, fuzzy
+#: template/index.html:67
 msgid ""
 "Markazga Qo'mita raisi tomonidan lavozimga tayinlanadigan va lavozmdan ozod "
 "etiladigan bosh direktor rahbarlik qiladi"
 msgstr ""
 "Центр возглавляет генеральный директор, который назначается на должность и "
-"освобождается от должности председателем Комитета"
+"освобождается от должности председателем Комитета."
 
-#: template/index.html:54
-#, fuzzy
+#: template/index.html:68
 msgid ""
 "Bosh direktorning ikki nafar o'rinbosari bo'ladi, ular bosh direktorning "
 "taqdimnomasiga asosan Qo'mita raisi tomonidan lavozimga tayinlanadi va "
 "lavozimdan ozod etiladi"
 msgstr ""
-"Генеральный директор имеет двух заместителей, которые назначаются на "
-"должность и освобождаются от должности председателем Комитета по "
-"представлению генерального директора"
+"Генеральный директор имеет двух заместителей, назначаемых на должность и "
+"освобождаемых от должности председателем Комитета по представлению "
+"генерального директора."
 
-#: template/index.html:87
+#: template/index.html:69
 #, fuzzy
+#| msgid ""
+#| "Markazga Qo'mita raisi tomonidan lavozimga tayinlanadigan va lavozmdan "
+#| "ozod etiladigan bosh direktor rahbarlik qiladi"
+msgid ""
+"Markaz bosh bugalteri Qo'mita bilan kelishgan xolda bosh direktor tomonidan "
+"lavozimga tayinlanadi va lavozmdan ozod etiladi."
+msgstr ""
+"Центр возглавляет генеральный директор, который назначается на должность и "
+"освобождается от должности председателем Комитета."
+
+#: template/index.html:105
 msgid "Barchasi"
 msgstr "Все"
 
-#: template/index.html:101
-#, fuzzy
+#: template/index.html:120 template/index.html:121
+msgid "Hududlar dorivor o'simliklar yetishtirish bo'yicha ixtisoslashtiriladi."
+msgstr "Регионы специализируются на выращивании лекарственных растений."
+
+#: template/index.html:125
 msgid ""
-"Voluptatem dignissimos provident quasi corporis voluptates sit assumenda"
+" 'Yovvoyi holda o'suvchi dorivor o'simliklarni muhofaza qilish, madaniy "
+"holda yetishtirish, qayta ishlash va mavjud resurslardan oqilona foydalanish "
+"chora-tadbirlari to'g'risida' Prezident qarori qabul qilindi"
 msgstr ""
-"Удовольствие - это все, предвидите, как физическое удовольствие принимает"
+"Принято Постановление Президента 'о мерах по охране дикорастущих "
+"лекарственных растений, выращиванию, переработке культурных растений и "
+"рациональному использованию имеющихся ресурсов'."
 
-#: template/index.html:102
-#, fuzzy
+#: template/index.html:126
 msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
-"tempor incididunt ut labore et dolore magna aliqua."
+"Qarorga muvofiq, 2020 yil 1 maydan boshlab dorivor o'simliklarni "
+"yetishtirish, saqlash, birlamchi yoki chuqur qayta ishlash klasterlari "
+"tashkil etiladi, shuningdek, hududlar dorivor o'simliklar yetishtirish "
+"bo'yicha ixtisoslashtiriladi."
 msgstr ""
-"Морковь Lorem ipsum, повышенная конкуренция среди студентов, но доступная "
-"для работы и ожирения."
+"Согласно постановлению, с 1 мая 2020 года будут созданы кластеры по "
+"выращиванию, хранению, первичной или глубокой переработке лекарственных "
+"растений, а также регионы будут специализироваться на выращивании "
+"лекарственных растений."
 
-#: template/index.html:105 template/index.html:106 template/index.html:107
-#, fuzzy
-msgid "Ullamco laboris nisi ut aliquip ex ea commodo consequat"
-msgstr ""
-"Физические упражнения, за исключением получения от них некоторой пользы"
-
-#: template/index.html:110
-#, fuzzy
-msgid "Ullamco laboris nisi ut aliquip ex ea commodo consequat."
-msgstr ""
-"Физические упражнения, за исключением получения от них некоторой пользы"
-
-#: template/index.html:111
-#, fuzzy
+#: template/index.html:127
 msgid ""
-"Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum "
-"dolore eu fugiat nulla pariatur."
+"Dorivor o'simliklar klasteri uchun yer maydoni Qoraqalpog'iston Respublikasi "
+"Vazirlar Kengashi, viloyatlar hokimliklari va tashabbuskorlar o'rtasida "
+"tuziladigan bitim asosida ajratiladi."
 msgstr ""
-"Регистрация в charms of pleasure должна быть отправлена в eu fugiat pariatur."
-
-#: template/index.html:112
-#, fuzzy
-msgid ""
-"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia "
-"deserunt mollit anim id est laborum."
-msgstr ""
-"За исключением случаев, когда cupidatat не существует, те, кто виноват в "
-"том, что идентификатор вызывающего абонента отсутствует."
+"Земельный участок под кластер лекарственных растений будет выделен на "
+"основании соглашения, заключаемого между Советом Министров Республики "
+"Каракалпакстан, хокимиятами областей и инициаторами."
 
 #: template/index.html:128
-#, fuzzy
-msgid "Lorem Ipsum"
-msgstr "дание само"
+msgid ""
+"Xorijiy investorlar ishtirokidagi dorivor o'simliklar klasteriga yer maydoni "
+"investitsiya kiritish to'g'risidagi shartnoma imzolangandan so'ng Vazirlar "
+"Mahkamasi tomonidan ajratiladi."
+msgstr ""
+"Земельный участок под кластер лекарственных растений с участием иностранных "
+"инвесторов будет выделен Кабинетом министров после подписания Соглашения об "
+"инвестировании."
 
 #: template/index.html:129
-#, fuzzy
 msgid ""
-"Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
-msgstr "Удовольствие деленити и искажало эти боли"
+"Klasterni tashkil etadigan tashabbuskor tomonidan quyidagi hujjatlar taqdim "
+"etiladi:"
+msgstr "Инициатор создания кластера предоставляет следующие документы:"
 
-#: template/index.html:136 template/index.html:152 template/index.html:160
-#: template/index.html:168
-#, fuzzy
-msgid "Sed ut perspiciatis"
-msgstr "Но я должен объяснить вам"
+#: template/index.html:130
+msgid "ariza;"
+msgstr "заявление;"
 
-#: template/index.html:137 template/index.html:153 template/index.html:161
+#: template/index.html:131
+msgid "biznes-reja yoki texnik-iqtisodiy asosnoma;"
+msgstr "бизнес-план или технико-экономическое обоснование;"
+
+#: template/index.html:132
+msgid ""
+"zarur infratuzilma ob'ektlari, mol-mulk va boshqa vositalarning mavjudligi "
+"haqida ma'lumotnoma."
+msgstr ""
+"справка о наличии необходимых объектов инфраструктуры, имущества и других "
+"средств."
+
+#: template/index.html:146
+msgid ""
+"Markaz o'ziga yukatilgan asosiy vazifalarga muvofiq quydagi funksiyalarni "
+"amalga oshiradi."
+msgstr ""
+"Центр осуществляет следующие функции в соответствии с возложенными на него "
+"основными задачами."
+
+#: template/index.html:152
+msgid ""
+"dorivor o‘simliklarni ilmiy asosda yetishtirish va qayta ishlash, ulardan "
+"oqilona foydalanishning yagona strategiyasini shakllantirish va amalga "
+"oshirish sohasida"
+msgstr ""
+"формирование и реализация единой стратегии научно обоснованного выращивания "
+"и переработки лекарственных растений, их рационального использования;"
+
+#: template/index.html:160
+msgid ""
+"respublika hududidagi yovvoyi holda o‘suvchi dorivor o‘simliklar areallarini "
+"o‘rganish va zaxiralarini aniqlash, mavjud bioresurslar genofondini saqlash, "
+"onalik plantatsiyalarini tashkil etish sohasida"
+msgstr ""
+"изучение ареалов и определение запасов дикорастущих лекарственных растений "
+"на территории республики, сохранение генофонда существующих биоресурсов, "
+"организация материнских плантаций;"
+
 #: template/index.html:169
-#, fuzzy
 msgid ""
-"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"
-msgstr "Зарегистрировался в поисках удовольствия за небольшую плату"
+"urug‘lik materiallarni yetishtirish va tayyorlash, ko‘paytirish, kolleksion "
+"ko‘chatxonalar tashkil etish hamda ularning xomashyolarini qayta ishlash "
+"bilan bog‘liq ilmiy va amaliy tadqiqotlarni olib borish sohasida"
+msgstr ""
+
+#: template/index.html:178
+msgid ""
+"dorivor o‘simliklarni muayyan tuproq-iqlim sharoitlarini hisobga olgan holda "
+"madaniy holda yetishtirishni yo‘lga qo‘yish bo‘yicha aniq ilmiy asoslangan "
+"takliflar ishlab chiqish sohasida"
+msgstr ""
+"разработка конкретных научно обоснованных предложений по налаживанию "
+"культивирования лекарственных растений с учетом конкретных почвенно-"
+"климатических условий;"
+
+#: template/index.html:186
+msgid ""
+"tuproq-iqlim sharoitlarini hisobga olib madaniy holda yetishtiriladigan "
+"dorivor o‘simliklarning agrotexnologik xaritalarini Qishloq xo‘jaligi "
+"vazirligi va O‘rmon xo‘jaligi davlat qo‘mitasi buyurtmasiga ko‘ra ishlab "
+"chiqish sohasida"
+msgstr ""
+"разработка агротехнологических карт лекарственных растений, выращиваемых с "
+"учетом почвенно-климатических условий, по заказу Министерства сельского "
+"хозяйства и Комитета;"
+
+#: template/index.html:194
+msgid ""
+"dorivor o‘simliklar kimyoviy tarkibini o‘rganish, mahsulotini standartlash "
+"va amaldagi qonun hujjatlariga muvofiq sertifikatlash sohasida"
+msgstr ""
+"изучение химического состава лекарственных растений, стандартизация их "
+"продукции и сертификация в соответствии с действующим законодательством;"
+
+#: template/portfolio.html:27
+msgid "Hammasi"
+msgstr "Все"
+
+#: template/portfolio.html:42 template/portfolio.html:43
+#: template/portfolio.html:74 template/portfolio.html:75
+#: template/portfolio.html:122 template/portfolio.html:123
+msgid "App"
+msgstr "Апп"
+
+#: template/portfolio.html:58 template/portfolio.html:59
+#: template/portfolio.html:106 template/portfolio.html:107
+#: template/portfolio.html:170 template/portfolio.html:171
+msgid "Web"
+msgstr "Веб"
+
+#: template/portfolio.html:90 template/portfolio.html:91
+#: template/portfolio.html:138 template/portfolio.html:139
+#: template/portfolio.html:154 template/portfolio.html:155
+msgid "Card"
+msgstr "Карт"
+
+#: template/pricing.html:13 template/pricing.html:15
+msgid "Pricing"
+msgstr "Цена"
+
+#: template/pricing.html:27
+msgid "Free"
+msgstr "Бесплатно"
+
+#: template/pricing.html:28
+msgid "per month"
+msgstr "за мецетс"
+
+#: template/pricing.html:30 template/pricing.html:43 template/pricing.html:46
+#: template/pricing.html:55 template/pricing.html:58
+msgid "Quam adipiscing vitae proin"
+msgstr "аыв авыа ываываы ваыа выа ываы аы ваы"
+
+#: template/pricing.html:31 template/pricing.html:44 template/pricing.html:56
+msgid "Nec feugiat nisl pretium"
+msgstr "фы вфв фы вфв фыв фыв фв ф ввф ы вф вфв ф"
+
+#: template/pricing.html:32 template/pricing.html:33 template/pricing.html:34
+#: template/pricing.html:45 template/pricing.html:57
+msgid "Nulla at volutpat diam uteera"
+msgstr "фывфывфвф выф вф вфы вф выфвф в фвфывфы"
+
+#: template/pricing.html:36 template/pricing.html:60
+msgid "Sotib olish"
+msgstr "Покупать"
+
+#: template/pricing.html:40
+msgid "Biznes"
+msgstr "Бизнес"
+
+#: template/pricing.html:41 template/pricing.html:53
+msgid "har oy"
+msgstr "каждый месяц"
+
+#: template/pricing.html:48
+msgid "Har oy"
+msgstr "каждый месяц"
+
+#: template/pricing.html:52
+msgid "Developer"
+msgstr "каждый месяц"
+
+#: template/services.html:12
+msgid "Markaz faoiliyati"
+msgstr "Деятельность центра"
+
+#: template/team.html:33
+msgid "Qabul"
+msgstr "Восприятие"
+
+#: template/team.html:34
+msgid "Ishonch raqamlari"
+msgstr "Номера доверия"
 
 #: venv/lib/python3.8/site-packages/django/contrib/messages/apps.py:7
-#, fuzzy
 msgid "Messages"
-msgstr "Сообщения"
+msgstr ""
 
 #: venv/lib/python3.8/site-packages/django/contrib/sitemaps/apps.py:8
-#, fuzzy
 msgid "Site Maps"
-msgstr "Карты сайта"
+msgstr ""
 
 #: venv/lib/python3.8/site-packages/django/contrib/staticfiles/apps.py:9
-#, fuzzy
 msgid "Static Files"
-msgstr "Статические файлы"
+msgstr ""
 
 #: venv/lib/python3.8/site-packages/django/contrib/syndication/apps.py:7
-#, fuzzy
 msgid "Syndication"
-msgstr "Синдикация"
+msgstr ""
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
@@ -419,8 +583,6 @@ msgid_plural ""
 "%(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/core/validators.py:455
 #, python-format
@@ -432,8 +594,6 @@ msgid_plural ""
 "%(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/core/validators.py:478
 #: venv/lib/python3.8/site-packages/django/forms/fields.py:343
@@ -447,8 +607,6 @@ msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/core/validators.py:485
 #, python-format
@@ -456,8 +614,6 @@ msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/core/validators.py:490
 #, python-format
@@ -467,8 +623,6 @@ msgid_plural ""
 "Ensure that there are no more than %(max)s digits before the decimal point."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/core/validators.py:559
 #, python-format
@@ -807,8 +961,6 @@ msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/forms/fields.py:619
 msgid "Please either submit a file or check the clear checkbox, not both."
@@ -869,8 +1021,6 @@ msgid "Please submit at most %d form."
 msgid_plural "Please submit at most %d forms."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/forms/formsets.py:434
 #, python-format
@@ -878,8 +1028,6 @@ msgid "Please submit at least %d form."
 msgid_plural "Please submit at least %d forms."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/forms/formsets.py:470
 #: venv/lib/python3.8/site-packages/django/forms/formsets.py:477
@@ -967,8 +1115,6 @@ msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:907
 #, python-format
@@ -1317,8 +1463,6 @@ msgid "%(num)d year"
 msgid_plural "%(num)d years"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/utils/timesince.py:10
 #, python-format
@@ -1326,8 +1470,6 @@ msgid "%(num)d month"
 msgid_plural "%(num)d months"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/utils/timesince.py:11
 #, python-format
@@ -1335,8 +1477,6 @@ msgid "%(num)d week"
 msgid_plural "%(num)d weeks"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/utils/timesince.py:12
 #, python-format
@@ -1344,8 +1484,6 @@ msgid "%(num)d day"
 msgid_plural "%(num)d days"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/utils/timesince.py:13
 #, python-format
@@ -1353,8 +1491,6 @@ msgid "%(num)d hour"
 msgid_plural "%(num)d hours"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/utils/timesince.py:14
 #, python-format
@@ -1362,8 +1498,6 @@ msgid "%(num)d minute"
 msgid_plural "%(num)d minutes"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: venv/lib/python3.8/site-packages/django/views/csrf.py:111
 msgid "Forbidden"

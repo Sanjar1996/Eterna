@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from .models import YangiliklarModel, FloraTypeModel, FloraModel, XodimModels
+from .models import YangiliklarModel, FloraTypeModel, FloraModel, XodimModels, DockModel
 from django.shortcuts import render
 from django.core.paginator import Paginator
 
@@ -84,7 +84,13 @@ class PortfolioDetailView(TemplateView):
 
 
 class PricingView(TemplateView):
-    template_name = 'pricing.html'
+
+    def get(self, request):
+        dockmodel = DockModel.objects.all()
+        context = {
+            'dockmodel': dockmodel
+        }
+        return render(request, 'pricing.html', context)
 
 
 class ServiceView(TemplateView):
