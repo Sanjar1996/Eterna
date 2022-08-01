@@ -115,7 +115,6 @@ class DockModel(models.Model):
     def __str__(self):
         return self.title_uz
 
-
     @property
     def title(self):
         return getattr(self, 'title_{}'.format(get_language()))
@@ -123,3 +122,29 @@ class DockModel(models.Model):
     @property
     def sub_title(self):
         return getattr(self, 'sub_title_{}'.format(get_language()))
+
+
+class ElektronTypeModels(models.Model):
+    type_uz = models.CharField(max_length=45, verbose_name="O'simlik turi")
+    type_ru = models.CharField(max_length=45, verbose_name="Тип ростении")
+
+    @property
+    def type(self):
+        return getattr(self, f"type_{get_language()}")
+
+    def __str__(self):
+        return self.type
+
+
+class ElektronModels(models.Model):
+    type = models.ForeignKey(ElektronTypeModels, on_delete=models.CASCADE)
+    file_name_uz = models.CharField(max_length=75, verbose_name="Hujjat nomi")
+    file_name_ru = models.CharField(max_length=75, verbose_name="Наименование документа")
+    file = models.FileField()
+
+    @property
+    def file_name(self):
+        return getattr(self, f"file_name_{get_language()}")
+
+    def __str__(self):
+        return self.file_name

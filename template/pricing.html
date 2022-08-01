@@ -10,127 +10,32 @@
 
                 <ol>
                     <li><a href="{% url 'pages:home' %}">{% trans "Asosiy" %}</a></li>
-                    <li>{% trans "Me'yoriy xujjatlar" %}</li>
+                    <li>{% trans "Elektron ma'lumotlar bazasi" %}</li>
                 </ol>
-                <h2>{% trans "Me'yoriy xujjatlar" %}</h2>
+                <h2>{% trans "Elektron ma'lumotlar bazasi" %}</h2>
 
             </div>
         </section><!-- End Breadcrumbs -->
-
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
+        <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing">
             <div class="container">
 
                 <div class="row">
-                    <center class="fst-normal mb-4 animate__animated animate__fadeInDown" style="font-size: 25px;"><b>
-                    </b></center>
-                    {% for data in dockmodel %}
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch {% if not forloop.first %} mt-4 mt-md-0 {% endif %}">
-                            <div class="icon-box">
-                                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                                <h4><a href="{{ data.link }}">{% data.title %}</a></h4>
-                                <p>{% trans "dorivor o‘simliklarni ilmiy asosda yetishtirish va qayta ishlash, ulardan oqilona foydalanishning yagona strategiyasini shakllantirish va amalga oshirish sohasida" %}</p>
+{#                    <center><h3>Byudjet toʼgʼrisidagi qonunchilik hujjatlariga muvofiq ochiq maʼlumotlar</h3></center>#}
+                    {% for data in elektront %}
+                        <div class="col-lg-3 col-md-6 {% if fotloop.first %}mt-4 mt-md-0{% endif %}">
+                            <div class="box">
+                                <h3>{{ data.type }}</h3>
+{#                                <h4><span> Hisobot</span></h4>#}
+                                <div class="btn-wrap">
+                                    <a href="{% url 'pages:elektron' data.pk %}" class="btn-buy">Ko'rish</a>
+                                </div>
                             </div>
                         </div>
                     {% endfor %}
-
-
-
-                    {#                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">#}
-                    {#                        <div class="icon-box">#}
-                    {#                            <div class="icon"><i class="bx bx-file"></i></div>#}
-                    {#                            <h4><a href="">{% trans "Sed ut perspiciatis" %}</a></h4>#}
-                    {#                            <p>{% trans "respublika hududidagi yovvoyi holda o‘suvchi dorivor o‘simliklar areallarini o‘rganish va zaxiralarini aniqlash, mavjud bioresurslar genofondini saqlash, onalik plantatsiyalarini tashkil etish sohasida" %}</p>#}
-                    {#                        </div>#}
-                    {#                    </div>#}
-                    {##}
-                    {#                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">#}
-                    {#                        <div class="icon-box">#}
-                    {#                            <div class="icon"><i class="bx bx-tachometer"></i></div>#}
-                    {#                            <h4><a href="">Magni Dolores</a></h4>#}
-                    {#                            <p>#}
-                    {#                                {% trans "urug‘lik materiallarni yetishtirish va tayyorlash, ko‘paytirish, kolleksion ko‘chatxonalar tashkil etish hamda ularning xomashyolarini qayta ishlash bilan bog‘liq ilmiy va amaliy tadqiqotlarni olib borish sohasida" %}#}
-                    {#                            </p>#}
-                    {#                        </div>#}
-                    {#                    </div>#}
-                    {##}
-                    {#                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">#}
-                    {#                        <div class="icon-box">#}
-                    {#                            <div class="icon"><i class="bx bx-file"></i></div>#}
-                    {#                            <h4><a href="">{% trans "Sed ut perspiciatis" %}</a></h4>#}
-                    {#                            <p>{% trans "dorivor o‘simliklarni muayyan tuproq-iqlim sharoitlarini hisobga olgan holda madaniy holda yetishtirishni yo‘lga qo‘yish bo‘yicha aniq ilmiy asoslangan takliflar ishlab chiqish sohasida" %}</p>#}
-                    {#                        </div>#}
-                    {#                    </div>#}
-                    {##}
-                    {#                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">#}
-                    {#                        <div class="icon-box">#}
-                    {#                            <div class="icon"><i class="bx bx-file"></i></div>#}
-                    {#                            <h4><a href="">{% trans "Sed ut perspiciatis" %}</a></h4>#}
-                    {#                            <p>{% trans "tuproq-iqlim sharoitlarini hisobga olib madaniy holda yetishtiriladigan dorivor o‘simliklarning agrotexnologik xaritalarini Qishloq xo‘jaligi vazirligi va O‘rmon xo‘jaligi davlat qo‘mitasi buyurtmasiga ko‘ra ishlab chiqish sohasida" %}</p>#}
-                    {#                        </div>#}
-                    {#                    </div>#}
-                    {##}
-                    {#                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">#}
-                    {#                        <div class="icon-box">#}
-                    {#                            <div class="icon"><i class="bx bx-file"></i></div>#}
-                    {#                            <h4><a href="">{% trans "Sed ut perspiciatis" %}</a></h4>#}
-                    {#                            <p>{% trans "dorivor o‘simliklar kimyoviy tarkibini o‘rganish, mahsulotini standartlash va amaldagi qonun hujjatlariga muvofiq sertifikatlash sohasida" %}</p>#}
-                    {#                        </div>#}
-                    {#                    </div>#}
-
                 </div>
 
             </div>
-        </section><!-- End Services Section -->
-
-        {% comment %}
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 box">
-            <h3>{% trans "Free" %}</h3>
-            <h4>$0<span>{% trans "per month" %}</span></h4>
-            <ul>
-              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
-              <li><i class="bx bx-check"></i> {% trans "Nec feugiat nisl pretium" %}</li>
-              <li><i class="bx bx-check"></i> {% trans "Nulla at volutpat diam uteera" %}</li>
-              <li class="na"><i class="bx bx-x"></i> <span>{% trans "Nulla at volutpat diam uteera" %}</span></li>
-              <li class="na"><i class="bx bx-x"></i> <span>{% trans "Nulla at volutpat diam uteera" %}</span></li>
-            </ul>
-            <a href="#" class="buy-btn">{% trans "Sotib olish" %}</a>
-          </div>
-
-          <div class="col-lg-4 box featured">
-            <h3>{% trans "Biznes" %}</h3>
-            <h4>$29<span>{% trans "har oy" %}</span></h4>
-            <ul>
-              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
-              <li><i class="bx bx-check"></i> {% trans "Nec feugiat nisl pretium" %}</li>
-              <li><i class="bx bx-check"></i> {% trans "Nulla at volutpat diam uteera" %}</li>
-              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
-            </ul>
-            <a href="#" class="buy-btn">{% trans "Har oy" %}</a>
-          </div>
-
-          <div class="col-lg-4 box">
-            <h3>{% trans "Developer" %}</h3>
-            <h4>$49<span>{% trans "har oy" %}</span></h4>
-            <ul>
-              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
-              <li><i class="bx bx-check"></i> {% trans "Nec feugiat nisl pretium" %}</li>
-              <li><i class="bx bx-check"></i> {% trans "Nulla at volutpat diam uteera" %}</li>
-              <li><i class="bx bx-check"></i> {% trans "Quam adipiscing vitae proin" %}</li>
-            </ul>
-            <a href="#" class="buy-btn">{% trans "Sotib olish" %}</a>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
-{% endcomment %}
+        </section><!-- End Pricing Section -->
     </main><!-- End #main -->
 {% endblock content %}

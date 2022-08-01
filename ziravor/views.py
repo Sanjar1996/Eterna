@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView
-from .models import YangiliklarModel, FloraTypeModel, FloraModel, XodimModels, DockModel
+from .models import YangiliklarModel, FloraTypeModel, FloraModel, XodimModels, DockModel, ElektronTypeModels, \
+    ElektronModels
 from django.shortcuts import render
 from django.core.paginator import Paginator
 
@@ -114,3 +115,29 @@ def detailview(request, pk):
         'yangiliklar': yangiliklar
     }
     return render(request, 'news.html', context)
+
+
+class ElektronTypeView(TemplateView):
+
+    def get(self, request):
+        elektron_type = ElektronTypeModels.objects.all()
+        context = {
+            'elektront': elektron_type
+        }
+        return render(request, 'pricing.html', context)
+
+    def post(self, request):
+        pass
+
+
+class ElektronView(TemplateView):
+    def get(self, request, pk):
+        elekton_type = ElektronTypeModels.objects.get(id=pk)
+        elektron = ElektronModels.objects.filter(type_id=pk)
+
+        context = {
+            'elektront': elekton_type,
+            'elektron': elektron
+        }
+
+        return render(request, 'pricing-detail.html', context)
